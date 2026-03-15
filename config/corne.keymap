@@ -55,15 +55,15 @@
 
                 numpad_layer {
 // -----------------------------------------------------------------------------------------
-// | TAB  |     |     |   |     |   |     | 1 | 2 | 3 | 0 | . | BSPC |
-// | SHFT | DFT |     |   |     |   |     | 4 | 5 | 6 | - | / |  =   |
-// | CTRL |     |     |   |     |   |     | 7 | 8 | 9 | + | * |      |
-//              | GUI |   | SPC |   | ENT |     | ALT |
+// | TAB  |BT_CLR|BT_PRV|BT_NXT|     |   |     | 1 | 2 | 3 | 0 | . | BSPC |
+// | SHFT | DFT  |      |      |     |   |     | 4 | 5 | 6 | - | / |  =   |
+// | CTRL |      |      |      |     |   |     | 7 | 8 | 9 | + | * |      |
+//               | GUI  |      | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp TAB    &trans &trans &trans &trans &trans     &kp N1 &kp N2 &kp N3 &kp N0    &kp DOT   &kp BSPC
-   &kp LSHFT  &tog 3 &trans &trans &trans &trans     &kp N4 &kp N5 &kp N6 &kp MINUS &kp SLASH &kp EQUAL
-   &kp LCTRL  &trans &trans &trans &trans &trans     &kp N7 &kp N8 &kp N9 &kp   PLUS  &kp ASTRK &trans
-                       &kp LGUI &trans &kp SPACE     &kp RET &trans  &kp RALT
+   &kp TAB    &bt BT_CLR &bt BT_PRV &bt BT_NXT &trans &trans     &kp N1 &kp N2 &kp N3 &kp N0    &kp DOT   &kp BSPC
+   &kp LSHFT  &tog 3     &trans     &trans     &trans &trans     &kp N4 &kp N5 &kp N6 &kp MINUS &kp SLASH &kp EQUAL
+   &kp LCTRL  &trans     &trans     &trans     &trans &trans     &kp N7 &kp N8 &kp N9 &kp   PLUS  &kp ASTRK &trans
+                         &kp LGUI   &trans     &kp SPACE     &kp RET &trans  &kp RALT
                         >;
                 };
         };
